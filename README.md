@@ -1,5 +1,5 @@
 # Recordurbate
-The act of recording a Chaturbate live stream. Credits to @oliverjrose99 & @divenxx
+The act of recording a Chaturbate live stream. Fix Youtube-dl & Recording top 500 models only, credits to @oliverjrose99 & @divenxx
 
 ## Requirements
 * Android (with Termux)
