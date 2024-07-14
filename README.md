@@ -1,7 +1,6 @@
 # Recordurbate
-The act of recording a Chaturbate live stream
+The act of recording a Chaturbate live stream. Credits to @oliverjrose99 & @divenxx
 
-Youtube-dl was previously broken, please update your installs to >= 2019.11.22
 ## Requirements
 * Linux / Android (with Termux)
 * Python 3+ (requests)
@@ -9,45 +8,50 @@ Youtube-dl was previously broken, please update your installs to >= 2019.11.22
 * FFmpeg
 
 ```commandline
-# apt update && apt upgrade
-# apt install python3 ffmpeg
-$ pip3 install yt-dlp requests
+# termux-setup-storage
+# pkg update && pkg upgrade
+# pkg install python
+# pkg install git
+# apt install python ffmpeg
+$ pip install yt-dlp requests
 ```
 ## Installation
 ```commandline
-$ git clone https://github.com/oliverjrose99/Recordurbate.git
+$ cd /storage/emulated/0/Android/data/com.termux/files/
+$ git clone https://github.com/Ayamarre/Recordurbate.git
+$ cd Recordurbate/recordurbate
 ```
 The default config files will work out of the box with youtube-dl and FFmpeg installed. Streams will be saved to the folder videos/\<name>/\<name> \<date> \<hour>_\<min>.mp4. This can be changed by editing the youtube-dl.config file, see the configuration section for more. 
 ## Usage
 
 View the usage/help text
 ```
-./Recordurbate help
+python Recordurbate.py help
 ```
 
 Add or remove a streamer to record
 ```
-./Recordurbate.py [add | del] username
+python Recordurbate.py [add | del] username
 ```
 
 Start, stop or restart the daemon
 ```
-./Recordurbate.py [start | stop | restart]
+python Recordurbate.py [start | stop | restart]
 ```
 
 List the streamers in the config
 ```
-./Recordurbate list
+python Recordurbate.py list
 ```
 
 Import streamers from a file
 ```
-./Recordurbate import [file]
+python Recordurbate.py import [file]
 ```
 
 Export streamers to a file. The file parameter is optional and the default location will be used if not passed
 ```
-./Recordurbate.py export [file]
+python Recordurbate.py export [file]
 ```
 
 ## Config Files
