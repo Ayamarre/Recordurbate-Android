@@ -2,7 +2,7 @@
 The act of recording a Chaturbate live stream. Fix Youtube-dl & Recording top 500 models only, credits to @oliverjrose99 & @divenxx
 
 ## Requirements
-* Android (with Termux)
+* Termux from F-Droid not Play Store
 * Python 3+ (requests)
 * Yt-dlp
 * FFmpeg
