@@ -77,22 +77,10 @@ This file is used directly by Recordurbate and contains all the configuration op
 ### Youtube-dl.config
 This file is used to set all of the Youtube-dl config options and is passed using the `--config-location` parameter. As mentioned, the system and user wide configs still apply. Options such as quality, export options and more can be [found on the Youtube-dl Github.](https://github.com/ytdl-org/youtube-dl)
 
-## TODO and future features
-* Integration with Chaturbate e.g. import from following, record paid for shows, etc
-* Better logging and config options
-* Support for other sites
-* Support for windows (OS.fork() alt)
-
 ## Notes
 
 ### Recordings lag and freeze
 A couple users have reported that recordings may lag and freeze which was due to out of date youtube-dl and ffmpeg versions. If you experience this, please ensure you are using the latest stable versions and that your internet, storage and CPU are not bottlenecks causing issues.
 
-### No files / Not running
-Some users found that no files were being made which was due to either software not being installed/configured or incorrect permissions. It's also possible that AppArmor is blocking the script which can be checked by looking at the syslog. Please check these before making an issue. Youtube-dl needs to be >= version 2019.11.22. It can be updated by running `pip3 install -U youtube-dl` and the version can be checked with the command `youtube-dl --version`.
-
-### Large Files and bandwidth usage
-Because the streams are intended to be watched live, there is little compression on the video. This can cause very large files and heavy internet usage as the max settings for some streamers are 4k/60fps and youtube-dl defaults to best available options. Internet usage can be reduced by using a lower quality and file size can be further reduced by compressing the file (will causes heavy CPU usage). All this can be done with youtube-dl config options. 
-
-### Termux support
-Recordurbate will work on termux but the python install location is different to normal Linux installs. You can either run the script as `python Recordurbate.py [command]` or change the shebang to `/data/data/com.termux/files/usr/bin/python3.7` and run the script as normal. I don't currently know how well YouTube-dl will work with changing between WiFi and 4G, but either way will use a lot of data and possibly battery. Please open an issue if you find any issues or have anything to add. 
+### Pid file found, is * already running? pid: xxxxx
+Manual delete rb.log & rb.pid 
