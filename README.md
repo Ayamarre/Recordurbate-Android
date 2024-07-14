@@ -1,4 +1,4 @@
-# Recordurbate
+# Recordurbate For Android
 The act of recording a Chaturbate live stream. Fix Youtube-dl & Recording top 500 models only, credits to @oliverjrose99 & @divenxx
 
 ## Requirements
