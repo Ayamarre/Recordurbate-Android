@@ -19,7 +19,7 @@ $ pip install yt-dlp requests
 ```commandline
 $ cd /storage/emulated/0/Android/data/com.termux/files/
 $ git clone https://github.com/Ayamarre/Recordurbate-Android.git
-$ cd Recordurbate/recordurbate
+$ cd Recordurbate-Android/recordurbate
 ```
 The default config files will work out of the box with youtube-dl and FFmpeg installed. Streams will be saved to the folder videos/\<name>/\<name> \<date> \<hour>_\<min>.mp4. This can be changed by editing the youtube-dl.config file, see the configuration section for more. 
 ## Usage
